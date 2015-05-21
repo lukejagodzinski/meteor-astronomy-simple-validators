@@ -1,4 +1,4 @@
-# Meteor Astronomy Simple Validators
+# Simple Validators module for Meteor Astronomy 
 
 **Table of Contents**
 - [About](#about)
@@ -32,7 +32,6 @@ Let's see how to add validators to our model.
 Post = Astro.Class({
   name: 'Post',
   collection: Posts,
-  transform: true,
   fields: ['title'],
   simpleValidators: {
     title: 'minlen(5)'
@@ -48,7 +47,6 @@ There is also a way of passing a custom error message to validator. We can do it
 Post = Astro.Class({
   name: 'Post',
   collection: Posts,
-  transform: true,
   fields: ['title'],
   simpleValidators: {
     title: {
@@ -66,9 +64,9 @@ As you can see, instead passing a string rules, we pass object with `rules` and 
 We also have several ways of adding validators to already defined schema.
 
 ```js
-Post.schema.addValidator('email', 'email');
+Post.addValidator('email', 'email');
 
-Post.schema.addValidators({
+Post.addValidators({
   title: 'str',
   email: 'email'
 });
@@ -77,7 +75,7 @@ Post.schema.addValidators({
 For now, we've shown how to add a single validator per field, but what about multiple validation rules. Like in the core validation package, we have to use `and` or `or` validators.
 
 ```js
-Post.schema.addValidators({
+Post.addValidators({
   title: 'and([str,minlen(5),required])'
 });
 ```
