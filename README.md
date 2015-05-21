@@ -29,7 +29,7 @@ $ meteor add jagi:astronomy-simple-validators
 Let's see how to add validators to our model.
 
 ```js
-Post = Astronomy.Class({
+Post = Astro.Class({
   name: 'Post',
   collection: Posts,
   transform: true,
@@ -45,7 +45,7 @@ As you can see, we've added `minlen` (alias for `minLength`) validator to the `t
 There is also a way of passing a custom error message to validator. We can do it using following code.
 
 ```js
-Post = Astronomy.Class({
+Post = Astro.Class({
   name: 'Post',
   collection: Posts,
   transform: true,
