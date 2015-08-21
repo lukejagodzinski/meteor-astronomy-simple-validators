@@ -12,7 +12,8 @@ Package.onUse(function(api) {
   api.use('underscore');
 
   // Module.
-  api.addFiles('lib/module/parser.js', ['client', 'server']);
-  api.addFiles('lib/module/init_class.js', ['client', 'server']);
-  api.addFiles('lib/module/module.js', ['client', 'server']);
+  api.addFiles([
+    'lib/module/parser.js',
+    'lib/module/init_class.js'
+  ], ['client', 'server']);
 });
