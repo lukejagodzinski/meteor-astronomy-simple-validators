@@ -14,6 +14,6 @@ Package.onUse(function(api) {
   // Module.
   api.addFiles([
     'lib/module/parser.js',
-    'lib/module/init_class.js'
+    'lib/module/init_definition.js'
   ], ['client', 'server']);
 });
