@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jagi:astronomy-simple-validators',
-  version: '0.6.0',
+  version: '1.0.0-rc.1',
   summary: 'Simple validators for Meteor Astronomy',
   git: 'https://github.com/jagi/meteor-astronomy-simple-validators.git'
 });
@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
-  api.use('jagi:astronomy-validators@0.10.0');
+  api.use('jagi:astronomy-validators@1.0.0-rc.1');
   api.use('underscore');
 
   // Module.
