@@ -1,4 +1,4 @@
-# 1.0.3 (2015-10-08)
+# 1.0.3 (2015-10-26)
 
 - Imply the `jagi:astronomy-validators` package
 - Fix error when defining simple validators in the `simpleValidators` section
